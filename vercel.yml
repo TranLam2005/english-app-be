@@ -1,0 +1,9 @@
+builds:
+  - src: 'target/*.jar'
+    use: '@vercel/node'
+    config:
+      includeFiles: ['target/*.jar']
+
+routes:
+  - src: '/(.*)'
+    dest: '/index.js'
