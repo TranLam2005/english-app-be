@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "target/*.jar",
+      "use": "@vercel/java"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/target/*.jar"
+    }
+  ]
+}
