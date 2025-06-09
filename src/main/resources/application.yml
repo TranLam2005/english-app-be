@@ -17,11 +17,11 @@ spring:
             client-id: 372091179984-l3inopvggus0e2hn0h91hq9tes0m6a9u.apps.googleusercontent.com
             client-secret: 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
             scope: email, profile
-            redirect-uri: http://localhost:8080/login/oauth2/code/google
+            redirect-uri: https://smarttech-367cffc9dc63.herokuapp.com/login/oauth2/code/google
           facebook:
             client-id: 722531733585802
             client-secret: 002132a9226cb1f7ad88aa6c09c84914
             scope: email, public_profile
-            redirect-uri: http://localhost:8080/login/oauth2/code/facebook\
+            redirect-uri: https://smarttech-367cffc9dc63.herokuapp.com/login/oauth2/code/facebook
 server:
   port: ${PORT:8080}
