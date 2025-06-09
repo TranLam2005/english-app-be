@@ -82,7 +82,7 @@ public class ConfigSecurity {
             String email = oAuth2User.getAttribute("email");
             String token = jwtUtil.generateToken(email);
             Cookie jwtCookie = new Cookie("access_token", token);
-            jwtCookie.setHttpOnly(false);
+            jwtCookie.setHttpOnly(true);
             jwtCookie.setSecure(true);
             jwtCookie.setPath("/");
             jwtCookie.setMaxAge(24*60*60);
