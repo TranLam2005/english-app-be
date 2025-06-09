@@ -84,9 +84,10 @@ public class ConfigSecurity {
             Cookie jwtCookie = new Cookie("access_token", token);
             jwtCookie.setHttpOnly(false);
             jwtCookie.setSecure(true);
-            jwtCookie.setPath("https://english-app-sigma-nine.vercel.app/");
+            jwtCookie.setPath("/");
             jwtCookie.setMaxAge(24*60*60);
             response.addCookie(jwtCookie);
+            response.addHeader("Set-Cookie", "access_token=" + token);
             if (!userService.exitsByUserName(email)) {
                 User user = new User();
                 user.setUsername(email);
