@@ -98,7 +98,7 @@ public class ConfigSecurity {
                 user.setRole("User");
                 userService.add(user);
             }
-            response.sendRedirect("http://localhost:3000/");
+            response.sendRedirect("https://english-app-sigma-nine.vercel.app/");
         };
     }
 }
