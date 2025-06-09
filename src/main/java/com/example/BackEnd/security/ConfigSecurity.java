@@ -87,7 +87,6 @@ public class ConfigSecurity {
             jwtCookie.setPath("/");
             jwtCookie.setMaxAge(24*60*60);
             response.addCookie(jwtCookie);
-            response.addHeader("Set-Cookie", "access_token=" + token);
             if (!userService.exitsByUserName(email)) {
                 User user = new User();
                 user.setUsername(email);
