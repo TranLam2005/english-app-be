@@ -83,7 +83,7 @@ public class ConfigSecurity {
             String token = jwtUtil.generateToken(email);
             Cookie jwtCookie = new Cookie("access_token", token);
             jwtCookie.setHttpOnly(false);
-            jwtCookie.setSecure(true);
+            jwtCookie.setSecure(false);
             jwtCookie.setPath("/");
             jwtCookie.setMaxAge(24*60*60);
             response.addCookie(jwtCookie);
