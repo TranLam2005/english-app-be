@@ -14,14 +14,14 @@ spring:
       client:
         registration:
           google:
-            client-id: 372091179984-l3inopvggus0e2hn0h91hq9tes0m6a9u.apps.googleusercontent.com
-            client-secret: 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
-            scope: email, profile
-            redirect-uri: https://smarttech-367cffc9dc63.herokuapp.com/login/oauth2/code/google
+            client-id: ${CLIENT_ID_GOOGLE}
+            client-secret: ${CLIENT_SECRET_GOOGLE}
+            scope: ${SCOPE_GOOGLE}
+            redirect-uri: ${REDIRECT_URL_GOOGLE}
           facebook:
-            client-id: 722531733585802
-            client-secret: 002132a9226cb1f7ad88aa6c09c84914
-            scope: email, public_profile
-            redirect-uri: https://smarttech-367cffc9dc63.herokuapp.com/login/oauth2/code/facebook
+            client-id: ${CLIENT_ID_FACEBOOK}
+            client-secret: ${CLIENT_SECRET_FACEBOOK}
+            scope: ${SCOPE_FACEBOOK}
+            redirect-uri: ${REDIRECT_URI_FACEBOOK}
 server:
   port: ${PORT:8080}
