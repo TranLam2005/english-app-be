@@ -40,7 +40,7 @@ public class ConfigSecurity {
                     CorsConfiguration corsConfiguration = new CorsConfiguration();
                     corsConfiguration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
                     corsConfiguration.setAllowCredentials(true);
-                    corsConfiguration.setAllowedOrigins(List.of("http://localhost:3000", "https://english-app-sigma-nine.vercel.app"));
+                    corsConfiguration.setAllowedOrigins(List.of("https://english-app-sigma-nine.vercel.app"));
                     corsConfiguration.setAllowedHeaders(List.of("*"));
                     return corsConfiguration;
                 }))
