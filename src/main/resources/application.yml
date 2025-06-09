@@ -2,7 +2,7 @@ spring:
   application:
     name: BackEnd
   datasource:
-    url: ${JAWSDB_URL}
+    url: jdbc:${JAWSDB_URL}
     username: ${SPRING_DATASOURCE_USERNAME}
     password: ${SPRING_DATASOURCE_PASSWORD}
   jpa:

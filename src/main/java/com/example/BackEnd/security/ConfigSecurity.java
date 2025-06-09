@@ -54,9 +54,6 @@ public class ConfigSecurity {
                             .requestMatchers("/get-access_token").authenticated()
                             .anyRequest().authenticated();
                 })
-                .formLogin(AbstractHttpConfigurer::disable)
-
-
                 .oauth2Login(oAuth2Login -> {
                     oAuth2Login
                             .successHandler(successHandler())
